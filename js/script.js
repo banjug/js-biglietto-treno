@@ -6,7 +6,7 @@ let distance = parseInt(prompt("Inserisci il numero di chilometri che devi perco
 let age = parseInt(prompt("Inserisci la tua età"));
 
 // calcolare il prezzo del biglietto (km * 0.21 euro)
-let price = parseFloat(distance * .21);
+let price = distance * .21;
 // mostra sempre i primi due decimali
 // TODO
 
