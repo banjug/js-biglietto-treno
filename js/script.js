@@ -24,6 +24,9 @@ if (age < 18) {
     finalPrice = price;
 }
 
+// mostra solo i primi due decimali
+finalPrice = finalPrice.toFixed(2);
+
 console.log(finalPrice);
 
 if (age < 18) {
