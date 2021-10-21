@@ -8,7 +8,7 @@ let age = parseInt(prompt("Inserisci la tua età"));
 // calcolare il prezzo del biglietto (km * 0.21 euro)
 let price = distance * .21;
 // mostra sempre i primi due decimali
-// TODO
+price = (Math.round(price * 100) / 100).toFixed(2);
 
 console.log(distance);
 console.log(age);
@@ -27,9 +27,10 @@ if (age < 18) {
 }
 
 // mostra solo i primi due decimali
-finalPrice = finalPrice.toFixed(2);
-
+finalPrice = Math.round(finalPrice * 100) / 100;
 console.log(finalPrice);
+
+// mostrare all'utente il prezzo finale del biglietto
 
 if (age < 18) {
     document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato di ${price} &euro;, ma grazie al tuo sconto studente il prezzo finale &egrave; di ${finalPrice} &euro;`;
@@ -38,4 +39,3 @@ if (age < 18) {
 } else {
     document.getElementById('my_id').innerHTML = `Il prezzo del biglietto &egrave; di ${price} &euro;`;
 }
-// mostrare all'utente il prezzo finale del biglietto
