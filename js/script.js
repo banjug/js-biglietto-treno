@@ -1,3 +1,5 @@
+const element = document.getElementById("my_id");
+
 // chiedere il numero di chilometri
 
 let distance = parseInt(prompt("Inserisci il numero di chilometri che devi percorrere"));
@@ -33,9 +35,9 @@ console.log(finalPrice);
 // mostrare all'utente il prezzo finale del biglietto
 
 if (age < 18) {
-    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato di ${price} &euro;, ma grazie al tuo sconto studente il prezzo finale &egrave; di ${finalPrice} &euro;`;
+    element.innerHTML = `Il prezzo del biglietto sarebbe stato di ${price} &euro;, ma grazie al tuo sconto studente il prezzo finale &egrave; di ${finalPrice} &euro;`;
 } else if (age > 65) {
-    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato di ${price} &euro;, ma grazie al tuo sconto anziani il prezzo finale &egrave; di ${finalPrice} &euro;`;
+    element.innerHTML = `Il prezzo del biglietto sarebbe stato di ${price} &euro;, ma grazie al tuo sconto anziani il prezzo finale &egrave; di ${finalPrice} &euro;`;
 } else {
-    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto &egrave; di ${price} &euro;`;
+    element.innerHTML = `Il prezzo del biglietto &egrave; di ${price} &euro;`;
 }
